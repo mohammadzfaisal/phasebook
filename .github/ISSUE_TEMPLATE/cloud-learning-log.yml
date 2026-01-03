@@ -1,0 +1,66 @@
+name: "🚀 Daily Cloud Learning Log"
+description: "Track your daily progress through the Learn to Cloud guide."
+title: "[Log]: Phase X - Topic Y (YYYY-MM-DD)"
+labels: ["tracking", "learning-path"]
+assignees: ["YOUR_GITHUB_USERNAME"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🗺️ Progress Tracker
+        Use this issue to document what you learned today following the [Learn to Cloud Guide](https://learntocloud.guide/).
+
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Current Phase
+      description: Which phase of the roadmap are you working on?
+      options:
+        - "Phase 0: Starting from Zero"
+        - "Phase 1: Linux & Bash"
+        - "Phase 2: Programming & AI"
+        - "Phase 3: Cloud Platforms (AWS/Azure/GCP)"
+        - "Phase 4: DevOps Fundamentals"
+        - "Phase 5: Security"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: tasks
+    attributes:
+      label: Today's Focus
+      description: Check off the core components you worked on.
+      options:
+        - label: "Theory & Documentation Reading"
+        - label: "Hands-on Lab / Terminal Practice"
+        - label: "Project Building"
+        - label: "Certification Prep"
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "What did you learn today?"
+      placeholder: "Example: Deep dive into VPC peering and Subnets in AWS..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: blockers
+    attributes:
+      label: "Blockers & Challenges"
+      placeholder: "What did you get stuck on? How did you solve it?"
+
+  - type: input
+    id: resource_link
+    attributes:
+      label: "Reference Links"
+      placeholder: "e.g., https://learntocloud.guide/phase3/"
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Daily Goal Check
+      options:
+        - label: "I updated my personal README/Portfolio with today's notes."
+          required: false
