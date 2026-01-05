@@ -23,9 +23,15 @@ body:
     id: daily_plan
     attributes:
       label: "📅 Daily Execution Plan"
-      description: "Customize the Day to fit your specific study path for this topic."
+      description: "Customize the days to fit your specific study path for this topic."
       value: |
         - [ ] Day #: Execution Plan - 
+        - [ ] Day #: Execution Plan -
+        - [ ] Day #: Execution Plan -
+        - [ ] Day #: Execution Plan -
+        - [ ] Day #: Execution Plan -
+        - [ ] Day #: Execution Plan -
+        - [ ] Day #: Execution Plan -
     validations:
       required: true
 
