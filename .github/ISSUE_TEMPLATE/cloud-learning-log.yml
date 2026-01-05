@@ -1,6 +1,6 @@
 name: "🚀 Daily Cloud Learning Log"
 description: "Track your daily progress through the Learn to Cloud guide."
-title: "[Log]: Phase X - Topic Y (YYYY-MM-DD)"
+title: "[Log]: Phase [X] - Topic [#]: (YYYY-MM-DD)"
 labels: ["tracking", "learning-path"]
 assignees: ["YOUR_GITHUB_USERNAME"]
 
