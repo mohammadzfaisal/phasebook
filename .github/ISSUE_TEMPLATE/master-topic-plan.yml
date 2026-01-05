@@ -19,16 +19,14 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: roadmap
+ - type: textarea
+    id: daily_plan
     attributes:
-      label: "🚦 Execution Stages"
-      description: "Customize these stages to fit your specific study path for this topic."
+      label: "📅 Daily Execution Plan"
+      description: "Customize the Day[ ] to fit your specific study path for this topic."
       value: |
-        - [ ] Stage 1: 
-        - [ ] Stage 2: 
-        - [ ] Stage 3: 
-        - [ ] Stage 4: 
+        - Day[x]: Execution Plan - 
+       
     validations:
       required: true
 
