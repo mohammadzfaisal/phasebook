@@ -44,6 +44,15 @@ body:
         - label: "All related Daily Logs are linked below."
         - label: "All cloud resources have been deleted (Cost Check)."
 
+   - type: input
+    id: blog_url
+    attributes:
+      label: Blog Post URL
+      description: Link to your blog post
+      placeholder: https://yourblog.com/
+    validations:
+      required: false
+
   - type: markdown
     attributes:
       value: |
