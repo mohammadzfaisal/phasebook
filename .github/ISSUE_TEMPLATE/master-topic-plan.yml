@@ -9,7 +9,7 @@ body:
     attributes:
       value: |
         ## 🗺️ Master Roadmap
-        Define your stages below. Use the `- [ ]` syntax to create interactive checkboxes.
+        Define your days below. Use the `- [x]` syntax to create interactive checkboxes.
 
   - type: input
     id: duration
