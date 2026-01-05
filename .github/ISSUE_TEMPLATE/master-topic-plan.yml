@@ -1,0 +1,49 @@
+name: "🏗️ Master Topic Plan"
+description: "Plan and track a major technical pillar (3 days to 1 month+)."
+title: "[Master]: Phase [x] - Topic [#]: (Topic Name)"
+labels: ["tracking", "master-issue", "status:in-progress"]
+assignees: ["YOUR_GITHUB_USERNAME"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🗺️ Master Roadmap
+        Use this issue to track the execution of a major technical pillar. You can **edit this issue** at any time to update your stages as you learn more about the topic.
+
+  - type: input
+    id: duration
+    attributes:
+      label: "Estimated Duration"
+      placeholder: "e.g., 5 Days, 2 Weeks, 1 Month"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: execution_milestones
+    attributes:
+      label: "Execution Milestones"
+      description: "Customize these stages to fit your specific study path for this topic."
+      options:
+        - label: "Stage 1: [Edit this to your first goal]"
+        - label: "Stage 2: [Edit this to your second goal]"
+        # Add as many or as few as you need for that topic
+
+
+  - type: textarea
+    id: definition_of_done
+    attributes:
+      label: "Definition of Done (Mastery Checklist)"
+      value: |
+        - [ ] I can build/configure this from scratch without a tutorial.
+        - [ ] I have documented the 'Whys' and 'Hows' in my Daily Logs.
+        - [ ] All lab infrastructure has been decommissioned (cost check).
+        - [ ] I have linked all daily logs to this master issue.
+      render: markdown
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## 🔗 Related Daily Logs
+        *Every day you create a Daily Log, link it below (e.g., #101, #102)*
