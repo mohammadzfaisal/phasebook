@@ -41,7 +41,18 @@ body:
     id: summary
     attributes:
       label: "What did you learn today?"
-      placeholder: "Example: Deep dive into VPC peering and Subnets in AWS..."
+      placeholder: |
+        ### 📝 Overview
+        [Brief summary of today's technical concept]
+
+        
+        ### 🏗️ Hands-on Lab Steps
+        1. **Goal:** [e.g., Connect to an EC2 instance via SSH]
+        2. **Execution:** [Describe the terminal steps or console actions taken]
+        3. **Outcome:** [e.g., Successfully reached the remote Amazon Linux terminal]
+
+        ### 💡 Key Takeaway
+        [What is the one "pro-tip" or "gotcha" you discovered today?]
     validations:
       required: true
 
