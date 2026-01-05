@@ -26,7 +26,6 @@ body:
       description: "Customize the Day to fit your specific study path for this topic."
       value: |
         - [ ] Day #: Execution Plan - 
-         
     validations:
       required: true
 
