@@ -1,7 +1,7 @@
 name: "🏗️ Master Topic Plan"
 description: "Plan and track a major technical pillar (3 days to 1 month+)."
 title: "[Master]: Phase [x] - Topic [#]: (Topic Name)"
-labels: ["tracking", "master-issue", "status:in-progress"]
+labels: ["tracking", "master-issue"]
 assignees: ["YOUR_GITHUB_USERNAME"]
 
 body:
@@ -9,41 +9,41 @@ body:
     attributes:
       value: |
         ## 🗺️ Master Roadmap
-        Use this issue to track the execution of a major technical pillar. You can **edit this issue** at any time to update your stages as you learn more about the topic.
+        Define your stages below. Use the `- [ ]` syntax to create interactive checkboxes.
 
   - type: input
     id: duration
     attributes:
-      label: "Estimated Duration"
-      placeholder: "e.g., 5 Days, 2 Weeks, 1 Month"
+      label: "⏱️ Estimated Duration"
+      placeholder: "e.g., 5 Days, 2 Weeks"
+    validations:
+      required: true
+
+  - type: textarea
+    id: roadmap
+    attributes:
+      label: "🚦 Execution Stages"
+      description: "Customize these stages to fit your specific study path for this topic."
+      value: |
+        - [ ] Stage 1: 
+        - [ ] Stage 2: 
+        - [ ] Stage 3: 
+        - [ ] Stage 4: 
     validations:
       required: true
 
   - type: checkboxes
-    id: execution_milestones
+    id: dod
     attributes:
-      label: "Execution Milestones"
-      description: "Customize these stages to fit your specific study path for this topic."
+      label: "✅ Final Mastery Check"
       options:
-        - label: "Stage 1: [Edit this to your first goal]"
-        - label: "Stage 2: [Edit this to your second goal]"
-        # Add as many or as few as you need for that topic
-
-
-  - type: textarea
-    id: definition_of_done
-    attributes:
-      label: "Definition of Done (Mastery Checklist)"
-      value: |
-        - [ ] I can build/configure this from scratch without a tutorial.
-        - [ ] I have documented the 'Whys' and 'Hows' in my Daily Logs.
-        - [ ] All lab infrastructure has been decommissioned (cost check).
-        - [ ] I have linked all daily logs to this master issue.
-      render: markdown
+        - label: "I can build this from scratch without a tutorial."
+        - label: "All related Daily Logs are linked below."
+        - label: "All cloud resources have been deleted (Cost Check)."
 
   - type: markdown
     attributes:
       value: |
         ---
         ## 🔗 Related Daily Logs
-        *Every day you create a Daily Log, link it below (e.g., #101, #102)*
+        *Reference your logs here: (e.g., Part of #101, #102)*
