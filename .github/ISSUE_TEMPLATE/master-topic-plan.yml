@@ -19,13 +19,14 @@ body:
     validations:
       required: true
 
- - type: textarea
+  - type: textarea
     id: daily_plan
     attributes:
       label: "📅 Daily Execution Plan"
-      description: "Customize the Day[ ] to fit your specific study path for this topic."
+      description: "Customize the Day to fit your specific study path for this topic."
       value: |
-        - Day[x]: Execution Plan - 
+        - [ ] Day #: Execution Plan - 
+         
     validations:
       required: true
 
